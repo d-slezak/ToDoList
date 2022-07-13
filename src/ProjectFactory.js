@@ -19,4 +19,4 @@ const ProjectFactory = (title) => {
     return { title, getItems, createItem }
 }
 
-export { ProjectFactory }
+export { ProjectFactory }       
