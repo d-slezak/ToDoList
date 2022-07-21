@@ -1,8 +1,10 @@
 function renderTitleBar() {
     const titleBar = document.createElement('div');
+    titleBar.id = 'titleBar'
     
     const logoImg = document.createElement('img');
-    logoImg.src = "./images/logo.jpg";
+    logoImg.id = 'titleImg'
+    logoImg.src = "./images/logo.svg";
     logoImg.alt = "ToDo Logo"
 
     const titleHeader = document.createElement('h1');

@@ -1,9 +1,16 @@
 import { renderTitleBar } from "./titleBar";
+import { renderNavBar } from "./navBar";
+import { renderAllTasks } from "./allTasks";
 
-const content = document.getElementById('content');
+const content = document.createElement('div');
+content.id = 'content';
 
 function renderHome() {
-    content.appendChild(renderTitleBar());
+    document.body.appendChild(renderTitleBar());
+    content.appendChild(renderNavBar());
+    content.appendChild(renderAllTasks());
+    document.body.appendChild(content);
+
 }
 
 export { renderHome }
