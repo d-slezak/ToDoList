@@ -1,6 +1,6 @@
 import { renderTitleBar } from "./titleBar";
 import { renderNavBar } from "./navBar";
-import { renderAllTasks } from "./allTasks";
+import { renderAllTasks } from "./pages/allTasks";
 
 const content = document.createElement('div');
 content.id = 'content';
